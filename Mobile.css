@@ -1,0 +1,211 @@
+@media only screen and (max-width: 376px) {
+  .nav {
+    margin: 20px;
+  }
+  #moreee {
+    display: block;
+  }
+  .first-card {
+    margin: 20px 20px 90px 20px;
+  }
+  .first-card p {
+    font-size: 13px;
+  }
+  .first-card input {
+    width: 200px;
+  }
+  .firstimage {
+    display: none;
+  }
+  .nav .info,
+  .login input {
+    display: none;
+  }
+
+  #secondimage2 {
+    display: block;
+    margin: 40px 0;
+  }
+  .secondimage {
+    display: none;
+  }
+  .second-card {
+    margin-bottom: 80px;
+  }
+  .second-card .right {
+    margin-left: 16px;
+  }
+  .second-card .right .upper {
+    margin: 0;
+  }
+  .second-card p {
+    margin-right: 0;
+    font-size: 22px;
+  }
+  .second-card .right ul {
+    margin: 0 0 0 16px;
+    font-size: 24px;
+  }
+  .third-card {
+    padding: 16px;
+    margin-bottom: 80px;
+  }
+  .third-card .left div {
+    display: block;
+  }
+  .third-card .left .inner {
+    display: block;
+    margin-left: 0;
+  }
+  .third-card .left .inner h3 {
+    font-size: 29px;
+  }
+  #thirdimage3 {
+    display: block;
+    padding-left: 63px;
+  }
+  .thirdimage {
+    display: none;
+  }
+  .fourth-card img {
+    display: none;
+  }
+  #pricingImage {
+    display: block;
+  }
+  .fourth-card {
+    padding: 0;
+  }
+  .fourth-card .right {
+    padding: 0 0 0 16px;
+    text-align: left;
+  }
+  .fourth-card .right h1 {
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -4px;
+  }
+  .fourth-card .right p {
+    font-size: 18px;
+  }
+  .pricing {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    padding: 16px;
+    gap: 16px;
+    margin-bottom: 80px;
+    height: auto;
+  }
+  .pricing div {
+    height: 644px;
+    width: 328px;
+    padding-left: 20px;
+  }
+  .pricing div input {
+    position: absolute;
+    bottom: 42px;
+    left: 42px;
+    width: 260px;
+    height: 52px;
+    /* padding: 14px 36px 14px 36px; */
+  }
+  .fifth-card {
+    margin: 0 24px 80px 16px;
+  }
+  #first6 {
+    display: block;
+    width: 351.75px;
+    height: 362.13px;
+  }
+  .first6 {
+    display: none;
+  }
+  .fifth-card .upper {
+    margin-right: 0;
+    margin-bottom: 60px;
+  }
+  .fifth-card .upper p {
+    font-size: 18.5px;
+  }
+  footer {
+    display: flex;
+    padding: 32px 20px;
+    justify-content: space-around;
+  }
+  footer h1 {
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -1px;
+  }
+  footer input {
+    width: 200px;
+  }
+  footer .right {
+    text-align: center;
+    flex-direction: column;
+  }
+  footer .right .email {
+    order: 3;
+  }
+  footer .right .links {
+    order: 1;
+  }
+  footer .right .features {
+    order: 2;
+  }
+  footer .lower {
+    display: block;
+  }
+  footer .lower p {
+    font-size: 17px;
+  }
+  /* ///////////////////////////////////
+   */
+  .navigation {
+    display: none;
+    background-color: #f0f0f0;
+    height: 100vh;
+    width: 50vw;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    z-index: 1;
+  }
+  a {
+    padding-right: 10px;
+    background: linear-gradient(to right, rgb(98, 91, 91), black);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration-line: none;
+    display: block;
+    margin-bottom: 20px;
+  }
+  a:hover {
+    border-right: 3px solid rgb(98, 91, 91);
+  }
+
+  .animate {
+    animation: moree 1s linear forwards;
+  }
+  .less {
+    animation: less 1s linear forwards;
+  }
+
+  @keyframes moree {
+    from {
+      transform: translate(-500px, 0);
+    }
+    to {
+      transform: translate(0, 0);
+    }
+  }
+  @keyframes less {
+    from {
+      transform: translate(0, 0);
+    }
+    to {
+      transform: translate(-500px, 0);
+    }
+  }
+}

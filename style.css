@@ -1,0 +1,499 @@
+@font-face {
+  font-family: Neue Machina Regular;
+  src: url(fonts/NeueMachina/NeueMachina-Regular.otf);
+}
+@font-face {
+  font-family: Neue MachinaLight;
+  src: url(fonts/NeueMachina/NeueMachina-Light.otf);
+}
+@font-face {
+  font-family: Neue Machinabold;
+  src: url(fonts/NeueMachina/NeueMachina-Ultrabold.otf);
+}
+input {
+  cursor: pointer;
+}
+body {
+  font-family: Neue Machina Regular;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+  overflow-x: hidden;
+}
+
+img {
+  background-color: #f0f0f0;
+}
+h1,
+h3 {
+  font-family: Neue MachinaLight;
+  font-weight: 400;
+}
+.info {
+  display: flex;
+  align-items: center;
+}
+.info a {
+  display: inline-block;
+  text-decoration: none;
+  color: #151515;
+  padding: 14px 20px;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 32px 90px 120px 90px;
+}
+.nav .login input {
+  border: 0px;
+  padding: 14px 20px;
+}
+.nav .login :nth-child(1) {
+  background-color: #ffffff;
+  color: #151515;
+}
+#moreee{
+  display: none;
+}
+.nav .login :nth-child(2) {
+  background-color: #151515;
+  color: #ffffff;
+  margin-left: 20px;
+}
+.first-card {
+  display: flex;
+  margin: 32px 90px 200px 90px;
+  position: relative;
+}
+.first-card h1 {
+  font-size: 50px;
+  margin: 0;
+}
+.first-card p {
+  margin-bottom: 40px;
+  font-size: 15px;
+}
+.first-card input,
+.first-card button {
+  border: 0;
+  width: 361px;
+  height: 52px;
+  margin-bottom: 80px;
+}
+.first-card input {
+  float: left;
+}
+.first-card button {
+  width: auto;
+  background: #151515;
+  color: #ffffff;
+}
+
+.second-card {
+  display: flex;
+  padding-right: 70px;
+  margin-bottom: 200px;
+}
+#secondimage2 {
+  display: none;
+}
+.second-card input {
+  border: 1.5px solid #000000;
+  padding: 8px 20px 8px 20px;
+  font-weight: bold;
+  font-size: 14px;
+}
+.second-card h1 {
+  letter-spacing: -3px;
+}
+.second-card p {
+  font-size: 14px;
+}
+.second-card .right {
+  margin-left: 40px;
+}
+.second-card .right ul {
+  margin: 60px 160px 0 0;
+  list-style-type: square;
+  font-size: 17px;
+  padding-inline-start: 20px;
+}
+.second-card .right ul li {
+  padding-left: 20px;
+  margin-bottom: 24px;
+}
+.third-card {
+  display: flex;
+  padding: 0 90px 0 80px;
+  margin-bottom: 200px;
+}
+.third-card input {
+  border: 1.5px solid #151515;
+  padding: 6px 20px;
+  font-weight: bold;
+}
+.third-card .left div {
+  display: flex;
+}
+.third-card .left .inner {
+  display: block;
+  margin-left: 28px;
+}
+.third-card .left .inner h3 {
+  margin: 0;
+  font-family: Neue Machina Regular;
+}
+
+.third-card .left .inner p {
+  font-size: 18px;
+}
+#thirdimage3 {
+  display: none;
+  width: 280px;
+  height: 400px;
+  margin-bottom: 40px;
+}
+.fourth-card {
+  display: flex;
+  padding: 0 80px;
+  margin-bottom: 60px;
+}
+#pricingImage {
+  display: none;
+  width: 280px;
+  height: 298px;
+}
+.fourth-card .right {
+  padding: 94px 0 67px 140px;
+  text-align: right;
+}
+.fourth-card .right input {
+  border: 1.5px solid #151515;
+  padding: 6px 20px;
+  font-weight: bold;
+}
+.fourth-card .right h1 {
+  line-height: 57.9px;
+  font-size: 37px;
+  font-weight: 600;
+}
+.fourth-card .right p {
+  font-size: 14px;
+}
+.currency {
+  font-size: 0.6em;
+  vertical-align: 40px;
+  font-family: Neue Machinabold;
+}
+.pricing {
+  height: 644px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 644px;
+  padding: 0 15px;
+  gap: 25px;
+  margin-bottom: 200px;
+}
+.pricing div {
+  padding-left: 50px;
+  position: relative;
+  width: 350px;
+}
+
+.pricing div p {
+  font-size: 19px;
+  margin-bottom: 60px;
+}
+.pricing div ul {
+  list-style-type: square;
+}
+.pricing div ul li {
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 24px;
+}
+.pricing > div:nth-child(1) {
+  outline: 2px solid #151515;
+}
+.pricing > div:nth-child(2) {
+  background-color: #151515;
+  color: #ffffff;
+}
+.pricing > div:nth-child(3) {
+  background-color: #ffffff;
+}
+
+.price {
+  font-family: Neue Machinabold;
+  font-size: 70px;
+}
+.per {
+  font-family: Neue Machinabold;
+  font-size: small;
+}
+.pricing div input {
+  position: absolute;
+  bottom: 42px;
+  left: 42px;
+  width: 320px;
+  height: 52px;
+  padding: 14px 36px 14px 36px;
+}
+.pricing > div:nth-child(1) input {
+  background-color: #151515;
+  color: #ffffff;
+}
+.pricing > div:nth-child(2) input {
+  background-color: #ffffff;
+  color: #151515;
+}
+.pricing > div:nth-child(3) input {
+  background-color: #151515;
+  color: #ffffff;
+}
+.fifth-card {
+  display:flex;
+  margin: 0 40px 20px 80px;
+}
+.fifth-card .upper {
+  margin-right: 250px;
+  margin-bottom: 60px;
+}
+.fifth-card .upper h1 {
+  font-size: 40px;
+  font-weight: 500;
+}
+.fifth-card .upper p {
+  font-size: 14.5px;
+}
+.fifth-card .left .upper input {
+  border: 1.5px solid #151515;
+  padding: 6px 20px;
+  font-weight: bold;
+}
+.questions {
+  display: flex;
+  justify-content: space-between;
+}
+#first6{
+  display: none;
+}
+.questions img {
+  cursor: pointer;
+}
+.questions h5 {
+  margin: 0;
+  flex-grow: 1;
+}
+hr {
+  height: 0px;
+  border: none;
+  border-top: 2px solid black;
+  margin: 20px 0;
+}
+footer  {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap:wrap ;
+  background-color: #151515;
+  color: #ffffff;
+  padding: 30px 80px;
+  position: relative;
+}
+footer h1 {
+  font-size: 50px;
+}
+footer img {
+  background: #151515;
+}
+footer input,
+footer button {
+  border: 0;
+  width: 361px;
+  height: 52px;
+  margin-bottom: 80px;
+}
+footer input {
+  height: 50px;
+  float: left;
+}
+footer button {
+  width: auto;
+  background: #151515;
+  color: #ffffff;
+  border: #ffffff solid 1px;
+  border-left: 0;
+}
+footer .left {
+  width: 500px;
+}
+footer .right {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  gap: 20px;
+}
+
+footer .right h3 {
+  font-family: Neue Machinabold;
+}
+
+footer .lower{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+
+
+/* /////////////////// */
+@keyframes delayBack {
+  from {
+    background-color: #f0f0f0;
+  }
+  to {
+    background-color: #151515;
+  }
+  from {
+    color: #151515;
+  }
+  to {
+    color: #f0f0f0;
+  }
+}
+@keyframes rotateZ {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateY {
+  0% {
+    transform: rotateY(0deg);
+  }
+  25% {
+    transform: rotateY(90deg);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+  75% {
+    transform: rotateY(270deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+@keyframes translateU {
+  from {
+    transform: translate(0px, 0px);
+  }
+  to {
+    transform: translate(20px, -20px);
+  }
+}
+@keyframes myAnim {
+  0%,
+  100% {
+    transform: translateX(0%);
+    transform-origin: 50% 50%;
+  }
+
+  15% {
+    transform: translateX(-30px) rotate(-6deg);
+  }
+
+  30% {
+    transform: translateX(15px) rotate(6deg);
+  }
+
+  45% {
+    transform: translateX(-15px) rotate(-3.6deg);
+  }
+
+  60% {
+    transform: translateX(9px) rotate(2.4deg);
+  }
+
+  75% {
+    transform: translateX(-6px) rotate(-1.2deg);
+  }
+}
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes run {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  25% {
+    transform: translate(40px, 0px);
+  }
+  50% {
+    transform: translate(80px, 0px);
+  }
+  75% {
+    transform: translate(40px, 0px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+.second-card .right input:hover,
+.third-card .left input:hover,
+.fourth-card .right input:hover,
+.fifth-card input[type="button"]:hover {
+  animation: delayBack 0.7s forwards cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+.firstimage:hover,
+.thirdimage:hover {
+  animation: rotateY 4s linear infinite;
+}
+.secondimage:hover,
+.firstimageInner:hover {
+  animation: rotateZ 4s linear infinite;
+  border-radius: 50%;
+}
+.second-card h1 span {
+  background: radial-gradient(black, white);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.thirdimageInner:hover {
+  animation: translateU 2s linear infinite;
+}
+.fourthimageInner:hover {
+  animation: myAnim 2s linear 0s 1 normal forwards;
+}
+.secondimageInner:hover {
+  animation: opacity 1s linear infinite;
+}
+.fourth-card img {
+  animation: run 4s linear infinite;
+}
+.navigation {
+  display: none;
+}
